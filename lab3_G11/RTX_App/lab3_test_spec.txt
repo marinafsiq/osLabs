@@ -1,0 +1,20 @@
+Write test task specification in this file.
+
+Task 2: This task periodically prints task status of each task in the system.
+
+Tasks 3,4,5 and 6: This task allocates and frees a fixed amount of memory. We assigned them with the following priorities:
+Task 3 - 3
+Task 4 - 2
+Task 5 - 4
+Task 6 - 4
+
+The tasks will get blocked if there is no memory available when os_mem_alloc() is
+called.
+A blocked on memory task will be resumed once enough memory is available in the
+system.
+
+When a certain amount of memory is freed, then the tasks will start executing in the following order: Task4, Task3 
+and between Tasks 5 and 6, the task that is waiting longer will be chosen.
+
+Init - initializes system resources and createsthe various tasks with different priorities. 
+It initializes a memory pool where most of the memory is allocated to itself and frees the memory after the tasks have been created.

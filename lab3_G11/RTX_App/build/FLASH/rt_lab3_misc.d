@@ -1,0 +1,12 @@
+.\build\FLASH\rt_lab3_misc.o: src\rt_lab3_misc.c
+.\build\FLASH\rt_lab3_misc.o: C:\Software\Keil\ARM\Inc\NXP\LPC17xx\LPC17xx.h
+.\build\FLASH\rt_lab3_misc.o: C:\Software\Keil\ARM\CMSIS\Include\core_cm3.h
+.\build\FLASH\rt_lab3_misc.o: C:\Software\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\build\FLASH\rt_lab3_misc.o: C:\Software\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\build\FLASH\rt_lab3_misc.o: C:\Software\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\build\FLASH\rt_lab3_misc.o: C:\Software\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h
+.\build\FLASH\rt_lab3_misc.o: src\uart_polling.h
+.\build\FLASH\rt_lab3_misc.o: C:\Software\Keil\ARM\RV31\INC\RTL.h
+.\build\FLASH\rt_lab3_misc.o: src\../../RTX_CM3/INC/RTL_ext.h
+.\build\FLASH\rt_lab3_misc.o: C:\Software\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\build\FLASH\rt_lab3_misc.o: C:\Software\Keil\ARM\ARMCC\bin\..\include\string.h

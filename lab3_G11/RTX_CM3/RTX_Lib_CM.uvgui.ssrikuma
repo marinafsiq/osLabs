@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectGui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_gui.xsd">
+
+  <SchemaVersion>-3.1</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <ViewPool/>
+
+  <SECTreeCtrl>
+    <View>
+      <WinId>38003</WinId>
+      <ViewName>Registers</ViewName>
+      <TableColWidths>115 154</TableColWidths>
+    </View>
+    <View>
+      <WinId>346</WinId>
+      <ViewName>Code Coverage</ViewName>
+      <TableColWidths>930 160</TableColWidths>
+    </View>
+    <View>
+      <WinId>204</WinId>
+      <ViewName>Performance Analyzer</ViewName>
+      <TableColWidths>1090</TableColWidths>
+    </View>
+  </SECTreeCtrl>
+
+  <TreeListPane>
+    <View>
+      <WinId>1506</WinId>
+      <ViewName>Symbols</ViewName>
+      <UserString></UserString>
+      <TableColWidths>133 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>1936</WinId>
+      <ViewName>Watch 1</ViewName>
+      <UserString></UserString>
+      <TableColWidths>133 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>1937</WinId>
+      <ViewName>Watch 2</ViewName>
+      <UserString></UserString>
+      <TableColWidths>133 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>1935</WinId>
+      <ViewName>Call Stack + Locals</ViewName>
+      <UserString></UserString>
+      <TableColWidths>133 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>2506</WinId>
+      <ViewName>Trace Data</ViewName>
+      <UserString></UserString>
+      <TableColWidths>75 135 130 95 70 230 200</TableColWidths>
+    </View>
+  </TreeListPane>
+
+  <WindowSettings>
+    <LogicAnalizer>
+      <ShowLACursor>0</ShowLACursor>
+      <ShowSignalInfo>0</ShowSignalInfo>
+      <ShowCycles>0</ShowCycles>
+    </LogicAnalizer>
+  </WindowSettings>
+
+  <WinLayoutEx>
+    <sActiveDebugView></sActiveDebugView>
+    <WindowPosition>
+      <length>44</length>
+      <flags>2</flags>
+      <showCmd>3</showCmd>
+      <MinPosition>
+        <xPos>-32000</xPos>
+        <yPos>-32000</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>-1</xPos>
+        <yPos>-1</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>421</Top>
+        <Left>447</Left>
+        <Right>1589</Right>
+        <Bottom>1096</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+    <MDIClientArea>
+      <RegID>0</RegID>
+      <MDITabState>
+        <Len>1148</Len>
+        <Data>0100000004000000010000000100000001000000010000000000000002000000000000000100000001000000000000002800000028000000010000000B00000008000000010000003C503A5C6563653235345C4543453235345C6C6162335C737461727465725C5254585F434D335C5352435C434D5C72745F4D656D426F785F6578742E68000000000F72745F4D656D426F785F6578742E68000000009CC1B600FFFFFFFF3A503A5C6563653235345C4543453235345C6C6162335C737461727465725C5254585F434D335C5352435C434D5C72745F5461736B5F6578742E63000000000D72745F5461736B5F6578742E6300000000F0A0A100FFFFFFFF3C503A5C6563653235345C4543453235345C6C6162335C737461727465725C5254585F434D335C5352435C434D5C72745F4D656D426F785F6578742E63000000000F72745F4D656D426F785F6578742E6300000000FFDC7800FFFFFFFF36503A5C6563653235345C4543453235345C6C6162335C737461727465725C5254585F434D335C5352435C434D5C72745F5461736B2E63000000000972745F5461736B2E6300000000C5D4F200FFFFFFFF38503A5C6563653235345C4543453235345C6C6162335C737461727465725C5254585F4170705C7372635C756172745F706F6C6C696E672E63000000000E756172745F706F6C6C696E672E6300000000F7B88600FFFFFFFF354E3A5C4543453235345C4C6162335C4E65775C48656C6C6F576F726C645C7372635C4C6162335F4D61696C626F785F4D61696E2E6300000000134C6162335F4D61696C626F785F4D61696E2E6300000000A5C2D700FFFFFFFF3B4E3A5C4543453235345C4C6162335C4E65775C48656C6C6F576F726C645C7372635C6C6162335F5368617265645F4D656D6F72795F4D61696E2E6300000000196C6162335F5368617265645F4D656D6F72795F4D61696E2E6300000000B3A6BE00FFFFFFFF35503A5C6563653235345C4543453235345C6C6162335C737461727465725C5254585F4170705C7372635C6C6162335F6D61696E2E63000000000B6C6162335F6D61696E2E6300000000EAD6A300FFFFFFFF38503A5C6563653235345C4543453235345C6C6162335C737461727465725C5254585F4170705C7372635C72745F6C6162335F6D6973632E63000000000E72745F6C6162335F6D6973632E6300000000F6FA7D00FFFFFFFF3A503A5C6563653235345C4543453235345C6C6162335C737461727465725C5254585F434D335C5352435C434D5C72745F5461736B5F6578742E68000000000D72745F5461736B5F6578742E6800000000B3A6BE00FFFFFFFF36503A5C6563653235345C4543453235345C6C6162335C737461727465725C5254585F434D335C5352435C434D5C72745F5461736B2E68000000000972745F5461736B2E6800000000EAD6A300FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD5000100000000000000020000001B0100006700000080070000DC020000</Data>
+      </MDITabState>
+    </MDIClientArea>
+  </WinLayoutEx>
+
+  <AlienFiles>
+    <Doc>
+      <Name>P:\ece254\ECE254\lab3\starter\RTX_CM3\SRC\CM\rt_MemBox_ext.h</Name>
+      <ColumnNumber>0</ColumnNumber>
+      <TopLine>1</TopLine>
+      <CurrentLine>3</CurrentLine>
+    </Doc>
+    <Doc>
+      <Name>N:\ECE254\Lab3\New\HelloWorld\src\Lab3_Mailbox_Main.c</Name>
+      <ColumnNumber>0</ColumnNumber>
+      <TopLine>77</TopLine>
+      <CurrentLine>102</CurrentLine>
+    </Doc>
+    <Doc>
+      <Name>N:\ECE254\Lab3\New\HelloWorld\src\lab3_Shared_Memory_Main.c</Name>
+      <ColumnNumber>0</ColumnNumber>
+      <TopLine>1</TopLine>
+      <CurrentLine>82</CurrentLine>
+    </Doc>
+    <Doc>
+      <Name>P:\ece254\ECE254\lab3\starter\RTX_CM3\SRC\CM\rt_Task_ext.h</Name>
+      <ColumnNumber>0</ColumnNumber>
+      <TopLine>1</TopLine>
+      <CurrentLine>1</CurrentLine>
+    </Doc>
+    <Doc>
+      <Name>P:\ece254\ECE254\lab3\starter\RTX_CM3\SRC\CM\rt_Task.h</Name>
+      <ColumnNumber>0</ColumnNumber>
+      <TopLine>21</TopLine>
+      <CurrentLine>16</CurrentLine>
+    </Doc>
+  </AlienFiles>
+
+</ProjectGui>

@@ -1,0 +1,97 @@
+Lab 3 questions:
+
+1. 
+* What is the purpose of the p_lnk variable in the struct OS_TCB?
+
+Ans: Link pointer for ready and semaphore wait lists.
+
+
+* What is the purpose of ret_val in the struct OS_TCB?
+
+Ans: Return value upon completion of a wait task.
+
+
+* What is the purpose of tsk_stack and stack variables in struct OS_TCB?
+
+Ans: tsk_stack: A stack pointer to the Current task (R13)
+stack variables:
+priv_stack: Private stack size, 0= system assigned
+stack: Pointer to Task Stack memory block
+
+* If you have a variable of type of struct OS_XCB, will casting this variable
+to struct OS_TCB keep the p_lnk ?eld?
+Yes. It will keep the p_lnk field.
+
+
+2. What is the purpose of variables mp_tcb and mp_stk?
+
+rt_init_box (&mp_tcb, mp_tcb_size, sizeof(struct OS_TCB));
+  
+rt_init_box (&mp_stk, mp_stk_size, BOX_ALIGN_8 | (U16)(os_stackinfo));
+
+mp_tcb and mp_stk are the starting address of the memory pools for the tcb array and the stack_info.
+
+3. 
+* What registers are saved on the task stack?
+R0,PC,PSP (R13 – Process Stack Pointer), xPSR (Program Status Register)
+
+* How to determine the start and end address of a task stack?
+To determine the start address of a task stack you should get the variable “p_TCB->tsk_stack” (tsk_stack inside the OS_TCB structure) 
+The end address is the start address (“p_TCB->tsk_stack”) plus the size of the stack ((U16)os_stackinfo or p_TCB->priv_stack)
+
+* How to determine the current stack pointer of a task that is not in RUNNING
+state?
+
+The current stack pointer of a task that is not in RUNNING state is in the OS_TCB struct (tsk_stack,*stack)
+
+
+* How to determine the current stack pointer of a task that is in RUNNING
+state?
+
+The current stack pointer of a task that is in RUNNING state is returned by the rt_get_PSP() method in HAL_CM3.c
+
+* In an RTX application, how to declare a memory pool named "mympool" that
+has 20 blocks of memory with block size of 12 bytes?
+
+const U32 msize = 12;
+const U32 cnt = 20;
+
+_declare_box8(mympool, msize, cnt);
+
+* Write one line of code to initialize the "mympool"
+
+_init_box8(&mympool, msize*cnt, msize);
+
+
+* What is the corresponding kernel function of _alloc_box()?
+
+The kernel function of _alloc_box() is rt_alloc_box
+
+ • What is the corresponding kernel function of _free_box?
+
+ The kernel function of _free_box() is rt_free_box()
+
+
+
+5.
+* What does the rt_put_prio() function do?
+
+Put task identified with "p_task" into list ordered by priority.
+
+• What does the rt_get_first() function do?
+Get task with the highest priority at head of list.
+
+6.
+• What does the rt_block() function do?
+  Block running task and choose next ready task.
+
+• What does the rt_dispatch() function do?
+If a task has been identified, then dispatch next task. If not, dispatch highest ready task.
+
+7.
+The return value is set in the following line in rt_mbx_send:
+p_TCB->ret_val = OS_R_MBX;
+
+8.
+ Both os_dly and os_rdy use the struct OS_XCB
+

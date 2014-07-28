@@ -1,0 +1,16 @@
+SRC/
+
+produce.c : contains the code for the producer
+consumer.c : contains the code for the consumer
+
+Compile both the files using the following instructions:
+gcc produce.c -o produce -lrt
+gcc consumer.c -o consumer.out -lrt
+
+where,
+produce and consumer.out are the executable files
+
+Then in order to test the functionality of the producer and consumer files, execute the following command:
+
+./produce <N> <B> 
+where N is the number of integers to be generated and B is the size of the mailbox queue
